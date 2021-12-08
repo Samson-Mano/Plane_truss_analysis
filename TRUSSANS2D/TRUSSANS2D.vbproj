@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85A5D16C-7C76-4BC0-93A5-04691F1D9DCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TRUSSANS2D.My.MyApplication</StartupObject>
+    <RootNamespace>TRUSSANS2D</RootNamespace>
+    <AssemblyName>Plane Truss Analyzer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>InnX.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>26EC5353DEA0C875140847A260433F617D267AD3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>TRUSSANS2D_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>C:\Users\User_pc\Desktop\Plane-Truss Analysis\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://sites.google.com/site/samsoninfinite/</SupportUrl>
+    <ProductName>Plane Truss Analyzer</ProductName>
+    <PublisherName>Samson Mano</PublisherName>
+    <WebPage>Publish.htm</WebPage>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Plane Truss Analyzer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Plane Truss Analyzer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing Area\Class\Object Adder\AddPortal2DT.vb" />
+    <Compile Include="Drawing Area\Class\Object Holder\History2DT.vb" />
+    <Compile Include="Drawing Area\Class\Object Holder\Line2DT.vb" />
+    <Compile Include="Drawing Area\Class\Other windows\Loadwindow.Designer.vb">
+      <DependentUpon>Loadwindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Other windows\Loadwindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Other windows\MemberProperties.Designer.vb">
+      <DependentUpon>MemberProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Other windows\MemberProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Other windows\SupportBoundaryConditionWindow.Designer.vb">
+      <DependentUpon>SupportBoundaryConditionWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Other windows\SupportBoundaryConditionWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawing Area\Class\Painting class\PermPaint2DT.vb" />
+    <Compile Include="Drawing Area\Class\Painting class\PTempShapes2DT.vb" />
+    <Compile Include="Drawing Area\Class\Predicate\SnapPredicate2DT.vb" />
+    <Compile Include="Drawing Area\WorkArea2DT.Designer.vb">
+      <DependentUpon>WorkArea2DT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing Area\WorkArea2DT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indexes.vb" />
+    <Compile Include="MDIMain.Designer.vb">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Other Windows\Newapp.Designer.vb">
+      <DependentUpon>Newapp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other Windows\Newapp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Windows\OptionD.Designer.vb">
+      <DependentUpon>OptionD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other Windows\OptionD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result Area\Analyzer\Rslt2DT.vb" />
+    <Compile Include="Result Area\Analyzer\Truss_FE_Solver.vb" />
+    <Compile Include="Result Area\Other windows\Aboutus.Designer.vb">
+      <DependentUpon>Aboutus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Result Area\Other windows\Aboutus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result Area\Other windows\AnalyzerUpdate.Designer.vb">
+      <DependentUpon>AnalyzerUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Result Area\Other windows\AnalyzerUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result Area\Other windows\GNU.Designer.vb">
+      <DependentUpon>GNU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Result Area\Other windows\GNU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result Area\Painting class\BackgroundMemberPaint.vb" />
+    <Compile Include="Result Area\Painting class\ResultPaint.vb" />
+    <Compile Include="Result Area\Painting class\RTempPaint.vb" />
+    <Compile Include="Result Area\ResultArea2DT.Designer.vb">
+      <DependentUpon>ResultArea2DT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Result Area\ResultArea2DT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Drawing Area\Class\Other windows\Loadwindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Loadwindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawing Area\Class\Other windows\MemberProperties.resx">
+      <DependentUpon>MemberProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawing Area\Class\Other windows\SupportBoundaryConditionWindow.resx">
+      <DependentUpon>SupportBoundaryConditionWindow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawing Area\WorkArea2DT.resx">
+      <DependentUpon>WorkArea2DT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMain.resx">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Windows\Newapp.resx">
+      <DependentUpon>Newapp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Windows\OptionD.resx">
+      <DependentUpon>OptionD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result Area\Other windows\Aboutus.resx">
+      <DependentUpon>Aboutus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result Area\Other windows\AnalyzerUpdate.resx">
+      <DependentUpon>AnalyzerUpdate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result Area\Other windows\GNU.resx">
+      <DependentUpon>GNU.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result Area\ResultArea2DT.resx">
+      <DependentUpon>ResultArea2DT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InnX.ico" />
+    <None Include="Resources\Matrix Details.png" />
+    <None Include="Resources\option1.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\Del1.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\stress.png" />
+    <None Include="Resources\strain.png" />
+    <None Include="Resources\Force.png" />
+    <None Include="Resources\displacement.png" />
+    <None Include="Resources\analyze.png" />
+    <None Include="Resources\Zoomtofit.png" />
+    <None Include="Resources\topview.png" />
+    <None Include="Resources\TOLoad21.png" />
+    <None Include="Resources\TOLoad2.png" />
+    <None Include="Resources\TOLoad1.png" />
+    <None Include="Resources\TOEnd.png" />
+    <None Include="Resources\TOElement.png" />
+    <None Include="Resources\support.png" />
+    <None Include="Resources\sideview.png" />
+    <None Include="Resources\Shear Force.png" />
+    <None Include="Resources\selectnode1.png" />
+    <None Include="Resources\selectnode.png" />
+    <None Include="Resources\selectmember.png" />
+    <None Include="Resources\select.png" />
+    <None Include="Resources\saveM.png" />
+    <None Include="Resources\Rotate.png" />
+    <None Include="Resources\reaction.png" />
+    <None Include="Resources\pullaxis.png" />
+    <None Include="Resources\propert.png" />
+    <None Include="Resources\planeOut.png" />
+    <None Include="Resources\planein.png" />
+    <None Include="Resources\Pan.png" />
+    <None Include="Resources\option.png" />
+    <None Include="Resources\OpenM.png" />
+    <None Include="Resources\NewM.png" />
+    <None Include="Resources\move.png" />
+    <None Include="Resources\Mirror.png" />
+    <None Include="Resources\Load.png" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\frontview.png" />
+    <None Include="Resources\fixlength.png" />
+    <None Include="Resources\FileH.png" />
+    <None Include="Resources\File.png" />
+    <None Include="Resources\del.png" />
+    <None Include="Resources\Deflection.png" />
+    <None Include="Resources\create.png" />
+    <None Include="Resources\CloseM.png" />
+    <None Include="Resources\clone.png" />
+    <None Include="Resources\BendingMoment.png" />
+    <None Include="Resources\arc.png" />
+    <None Include="Resources\3dtr.png" />
+    <None Include="Resources\3dsolid.png" />
+    <None Include="Resources\2dtruss.png" />
+    <None Include="Resources\2dplate.png" />
+    <None Include="Resources\1D.png" />
+    <None Include="TRUSSANS2D_1_TemporaryKey.pfx" />
+    <None Include="TRUSSANS2D_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -45,5 +45,5 @@ This project is licensed under the  MIT license. Please refer to the LICENSE fil
 
 For any questions or inquiries, feel free to reach out to the project maintainer:
 
-- Name: Mano
+- Name: Samson Mano
 - Email: saminnx@gmail.com

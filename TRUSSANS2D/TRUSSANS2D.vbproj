@@ -298,8 +298,6 @@
     <None Include="Resources\2dtruss.png" />
     <None Include="Resources\2dplate.png" />
     <None Include="Resources\1D.png" />
-    <None Include="TRUSSANS2D_1_TemporaryKey.pfx" />
-    <None Include="TRUSSANS2D_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

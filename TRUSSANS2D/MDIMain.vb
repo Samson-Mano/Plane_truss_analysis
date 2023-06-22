@@ -726,6 +726,9 @@ s1:
     End Sub
 
     Private Sub MDIMain_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        WA2dt = New WorkArea2DT
+        RA2dt = New ResultArea2DT
+
         ToolStrip1.Enabled = True
         _line.Checked = False
         _arc.Checked = False

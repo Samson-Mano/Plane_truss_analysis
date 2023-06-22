@@ -134,6 +134,23 @@
     End Class
 
     Public Sub New(ByVal El As Line2DT)
+        TempEL = New SelectedElement
+        SNdetails = New NodeDetails(El.SN.Support.PJ,
+                                       El.SN.Support.PS,
+                                       El.SN.Support.RS,
+                                       El.SN.Support.supportinclination,
+                                       El.SN.Support.settlementdx,
+                                       El.SN.Support.settlementdy,
+                                       El.SN.Load.Loadintensity,
+                                       El.SN.Load.Loadinclination)
+        ENdetails = New NodeDetails(El.EN.Support.PJ,
+                                       El.EN.Support.PS,
+                                       El.EN.Support.RS,
+                                       El.EN.Support.supportinclination,
+                                       El.EN.Support.settlementdx,
+                                       El.EN.Support.settlementdy,
+                                       El.EN.Load.Loadintensity,
+                                       El.EN.Load.Loadinclination)
         ' This call is required by the Windows Form Designer.
         InitializeComponent()
         ' Add any initialization after the InitializeComponent() call.

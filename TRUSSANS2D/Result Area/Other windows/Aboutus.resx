@@ -118,14 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TextBoxDescription.Text" xml:space="preserve">
-    <value>Description :
-This Program can be exclusively used to analyze plane truss. Finite element analysis is used. This software is free, share it. 
+    <value>Description:
+This software is a powerful tool designed for the exclusive purpose of analyzing plane trusses using finite element analysis. With its advanced capabilities, it empowers engineers and structural analysts to conduct precise and comprehensive evaluations of truss structures. This sophisticated program enables accurate simulations, providing valuable insights into the behavior and performance of truss systems. Best of all, it is offered as a free resource, encouraging knowledge sharing and collaboration within the engineering community.
 
-Designed &amp; Created By
+Designed and Created By:
 Samson Mano
-saminnx@gmail.com
-https://sites.google.com/site/samsoninfinite/
-
+Contact: saminnx@gmail.com
+Website: https://sites.google.com/site/samsoninfinite/
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

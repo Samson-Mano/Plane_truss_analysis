@@ -22,6 +22,12 @@ The project aims to provide a comprehensive tool for engineers and structural an
 3. Build the solution to compile the application.
 4. Run the application and start analyzing 2D trusses.
 
+## Example
+
+![Arch Truss](/Images/example_arch.png)
+![Arch Truss Member Force](/Images/example_mforce.png)
+![Arch Truss Deflection](/Images/example_defl.png)
+
 ## Usage
 
 1. Launch the application.

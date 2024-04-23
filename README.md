@@ -17,10 +17,16 @@ The project aims to provide a comprehensive tool for engineers and structural an
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/repository-name.git`
+1. Clone the repository: `git clone https://github.com/Samson-Mano/Plane_truss_analysis.git`
 2. Open the project in Visual Studio or your preferred VB.Net development environment.
 3. Build the solution to compile the application.
 4. Run the application and start analyzing 2D trusses.
+
+## Example
+
+![Arch Truss](/Images/example_arch.png)
+![Arch Truss Member Force](/Images/example_mforce.png)
+![Arch Truss Deflection](/Images/example_defl.png)
 
 ## Usage
 
@@ -33,11 +39,11 @@ The project aims to provide a comprehensive tool for engineers and structural an
 
 ## License
 
-This project is licensed under the [Insert License Here]. Please refer to the LICENSE file for more details.
+This project is licensed under the  MIT license. Please refer to the LICENSE file for more details.
 
 ## Contact
 
 For any questions or inquiries, feel free to reach out to the project maintainer:
 
-- Name: Mano
+- Name: Samson Mano
 - Email: saminnx@gmail.com
